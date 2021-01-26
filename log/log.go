@@ -1,9 +1,10 @@
-package loging
+package log
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func Go() string {
-	return "Don't communicate by sharing memory, share memory by communicating."
+// Hello returns a greeting for the named person.
+func Hello(name string) string {
+    // Return a greeting that embeds the name in a message.
+    message := fmt.Sprintf("Hi, %v. Welcome!", name)
+    return message
 }
